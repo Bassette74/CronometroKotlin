@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8C8F8"
+    android:backgroundTint="#C7B4ED"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="41dp"
+        android:background="@color/white"
+        android:backgroundTint="#00E3FF"
+        android:backgroundTintMode="add"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ButtonStart"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/ButtonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:backgroundTint="#00E3FF"
+        android:backgroundTintMode="add"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@+id/ResetButton"
+        app:layout_constraintStart_toEndOf="@+id/PauseButton"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/PauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/white"
+        android:backgroundTint="#00E3FF"
+        android:backgroundTintMode="add"
+        android:text="Pause"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonStart"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/chronometerTextView"
+        android:layout_width="220dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="162dp"
+        android:text="00:00:00"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timer"
+        android:layout_width="198dp"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:text="Timer"
+        android:textSize="20sp"
+        app:rippleColor="#E4B8B8"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
