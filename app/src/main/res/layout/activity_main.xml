@@ -20,7 +20,8 @@
         android:text="Reset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ButtonStart"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/ButtonStart"
@@ -34,7 +35,8 @@
         android:text="Start"
         app:layout_constraintEnd_toStartOf="@+id/ResetButton"
         app:layout_constraintStart_toEndOf="@+id/PauseButton"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/PauseButton"
@@ -48,7 +50,8 @@
         android:text="Pause"
         app:layout_constraintEnd_toStartOf="@+id/ButtonStart"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/chronometerTextView"
@@ -73,7 +76,8 @@
         android:text="Timer"
         android:textSize="20sp"
         app:rippleColor="#E4B8B8"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="505dp" />
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="505dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
